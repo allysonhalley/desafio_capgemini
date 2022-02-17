@@ -1,6 +1,6 @@
 package com.capgemini;
 
-import com.capgemini.questions.Question01;
+import com.capgemini.directSolution.question01.Question01;
 
 /**
  * Hello world!

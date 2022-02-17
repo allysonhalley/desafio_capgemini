@@ -6,13 +6,14 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.capgemini.directSolution.question01.Question01;
+
 import org.junit.Test;
 
 public class Question01Test {
 
     int stairSize = 6;
     String stepStair = "";    
-    List<String> actual = Question01.makeStair(stepStair);
     
     @Test
     public void testMakeStair() {        
@@ -20,6 +21,7 @@ public class Question01Test {
         for (int i = 0; i < stairSize; i++) {
             stepStair = stepStair+" ";
         }
+        List<String> actual = Question01.makeStair(stepStair);
         assertEquals("É ArrayList!", ArrayList.class, actual.getClass());
         assertEquals("Tem tamanho "+stairSize, stairSize, actual.size());
         System.out.println("Contém *");
