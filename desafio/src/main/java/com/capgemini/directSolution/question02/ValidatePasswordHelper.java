@@ -15,7 +15,7 @@ public class ValidatePasswordHelper {
             return lowerSix;
 
         } else {
-            rule = Pattern.compile(validation);
+            rule = Pattern.compile("["+validation+"]");
             matcher = rule.matcher(password);
             
             return matcher.matches();                

@@ -5,10 +5,10 @@ public class Question02 {
     // Bloco de constants que representam as regras
     //TODO INSERIR OS REGEX
     static int LENGTH = 6;
-    static String ONE_DIGITI = "";
-    static String ONE_DOWN_LETTER = "";
-    static String ONE_UPPER_LETTER = "";
-    static String ONE_SPECIAL_CHAR = "";
+    static String ONE_DIGITI = "0-9";
+    static String ONE_DOWN_LETTER = "a-z";
+    static String ONE_UPPER_LETTER = "A-Z";
+    static String ONE_SPECIAL_CHAR = "\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+";
     
     public static int validatePassword(String password){
         
