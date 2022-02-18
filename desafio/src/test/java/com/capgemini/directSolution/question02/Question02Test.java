@@ -7,4 +7,9 @@ public class Question02Test {
     public void testValidatePassword() {
 
     }
+
+    @Test
+    public void testValidatePasswordMinor6(){
+        
+    }
 }

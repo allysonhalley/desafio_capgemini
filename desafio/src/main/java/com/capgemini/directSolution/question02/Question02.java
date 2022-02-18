@@ -4,28 +4,33 @@ public class Question02 {
 
     // Bloco de constants que representam as regras
     //TODO INSERIR OS REGEX
-    static int LENGTH = 6;
-    static String ONE_DIGITI = "0-9";
-    static String ONE_DOWN_LETTER = "a-z";
-    static String ONE_UPPER_LETTER = "A-Z";
-    static String ONE_SPECIAL_CHAR = "\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+";
+    final static int LENGTH = 6;
+    final static String ONE_DIGITI = "[\\d]";
+    final static String ONE_LOWER_LETTER = "[a-z]";
+    final static String ONE_UPPER_LETTER = "[A-Z]";
+    final static String ONE_SPECIAL_CHAR = "\\!\\@\\#\\$\\%\\^\\&\\*\\(\\)\\-\\+";
     
     public static int validatePassword(String password){
         
-        // Quantidade de dígitos faltantes para completar o password
-        int addChar = 0;
+        // Quantidade de dígitos faltantes para completar o password        
 
-        ValidatePasswordHelper.validate(null, password);
-        ValidatePasswordHelper.validate(ONE_DIGITI, password);
-        ValidatePasswordHelper.validate(ONE_DOWN_LETTER, password);
-        ValidatePasswordHelper.validate(ONE_UPPER_LETTER, password);
-        ValidatePasswordHelper.validate(ONE_SPECIAL_CHAR, password);
-
-        if (password.length() < 6 && password.length() >= 0) {
-            addChar = 6 - password.length();
+        if (ValidatePasswordHelper.validateLength(password)) {
+            System.out.println(6-password.length());
+        }
+        if (ValidatePasswordHelper.validateCharacteres(ONE_DIGITI, password)) {
+            System.out.println("Insira ao menos um dígito (número)");
+        }
+        if (ValidatePasswordHelper.validateCharacteres(ONE_LOWER_LETTER, password)) {
+            System.out.println("Insira letra minúsculas");
+        }
+        if (ValidatePasswordHelper.validateCharacteres(ONE_UPPER_LETTER, password)) {
+            System.out.println("Insira letras maiúsculas");
+        }
+        if (ValidatePasswordHelper.validateCharacteres(ONE_SPECIAL_CHAR, password)) {
+            System.out.println("Insira caracteres especial");
         }
 
-        return addChar;
+        return 6-password.length();
         
     }
 
