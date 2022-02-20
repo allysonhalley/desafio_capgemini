@@ -1,6 +1,6 @@
-package com.capgemini.directSolution.question02;
+package com.capgemini.alternativeSolution.question02;
 
-public class Question02 {
+public class AlternativeAnswer02 {
 
     // Bloco de constants que representam as regras
     //TODO INSERIR OS REGEX

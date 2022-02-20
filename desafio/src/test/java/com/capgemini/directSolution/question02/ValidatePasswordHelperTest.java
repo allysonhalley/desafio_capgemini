@@ -2,6 +2,8 @@ package com.capgemini.directSolution.question02;
 
 import static org.junit.Assert.assertEquals;
 
+import com.capgemini.alternativeSolution.question02.ValidatePasswordHelper;
+
 import org.junit.Test;
 
 public class ValidatePasswordHelperTest {

@@ -2,14 +2,9 @@ package com.capgemini.directSolution.question02;
 
 import org.junit.Test;
 
-public class Question02Test {
+public class DirecetAnswer02Test {
     @Test
     public void testValidatePassword() {
 
-    }
-
-    @Test
-    public void testValidatePasswordMinor6(){
-        
     }
 }

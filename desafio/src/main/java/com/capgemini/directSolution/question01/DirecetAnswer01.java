@@ -3,7 +3,7 @@ package com.capgemini.directSolution.question01;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Question01 {
+public class DirecetAnswer01 {
     
     public static void showStair(int stairSize){
 

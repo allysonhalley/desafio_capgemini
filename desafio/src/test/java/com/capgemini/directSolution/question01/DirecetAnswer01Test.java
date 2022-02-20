@@ -1,4 +1,4 @@
-package com.capgemini.questions;
+package com.capgemini.directSolution.question01;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -6,12 +6,9 @@ import static org.junit.Assert.assertTrue;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.capgemini.directSolution.question01.Question01;
-
 import org.junit.Test;
 
-public class Question01Test {
-
+public class DirecetAnswer01Test {
     int stairSize = 6;
     String stepStair = "";    
     
@@ -21,7 +18,7 @@ public class Question01Test {
         for (int i = 0; i < stairSize; i++) {
             stepStair = stepStair+" ";
         }
-        List<String> actual = Question01.makeStair(stepStair);
+        List<String> actual = DirecetAnswer01.makeStair(stepStair);
         assertEquals("É ArrayList!", ArrayList.class, actual.getClass());
         assertEquals("Tem tamanho "+stairSize, stairSize, actual.size());
         System.out.println("Contém *");
