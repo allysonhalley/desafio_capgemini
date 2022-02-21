@@ -18,7 +18,7 @@ public class DirecetAnswer01Test {
         for (int i = 0; i < stairSize; i++) {
             stepStair = stepStair+" ";
         }
-        List<String> actual = DirecetAnswer01.makeStair(stepStair);
+        List<String> actual = DirectAnswer01.makeStair(stepStair);
         assertEquals("É ArrayList!", ArrayList.class, actual.getClass());
         assertEquals("Tem tamanho "+stairSize, stairSize, actual.size());
         System.out.println("Contém *");

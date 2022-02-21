@@ -1,7 +1,32 @@
 # README
 
-SERÃO CONSTRUÍDOS 2 SOLUÇÕES
+## Execução
+```
+- Ao executar será mostrado no terminal as opções para visualizão de cada solução.
+- Será solicitado a inserção de numeral correspondente á solução
+- Opções de 1 à 3 são as soluções
+- Opção 0 finaliza a aplicação
+```
+## Detalhamento e Limitações
+### Package Direct Solution
+* Contem a solução mais direta dentro dos cenários projetados pelo entendimento do problema
+* Contém erros de limitações técinicas do desenvolvedor (Eu)
+* Foi incluído testes utilizando o JUnit e a IDE VSCODE
 
-A primeira com soluções diretas package QUESTIONS
+### Package Alternative Solution
+* Seria a alternativa mais complexa, abrangendo os mais variados cenários e inseridos mais padrões
+* Soluções seriam desenvolvidas a partir da finalização correta do package anterior citado
 
-E a tentativa de uma segunda com resoluções mais apuradas package ALTERNATIVE QUESTIONS
+## DOCUMETAÇÃO
+
+* JAVA 
+* MAVEN
+* Direct Solution: Contento soluções diretas
+* Alternative Solution: Contendo soluções com mais abrangências
+* Test: Foi Utilizado JUnit
+
+## Execução
+* Baixar o projeto
+* Executar o MAVEN
+* Executar o projeto
+* Instruções durante execução

@@ -3,18 +3,11 @@ package com.capgemini;
 import java.util.List;
 import java.util.Scanner;
 
-import javax.sound.midi.SysexMessage;
-
-import com.capgemini.directSolution.question01.DirecetAnswer01;
-// import com.capgemini.directSolution.question02.DirecetAnswer02;
-import com.capgemini.directSolution.question02.DirecetAnswer02;
-import com.capgemini.directSolution.question03.Question03;
+import com.capgemini.directSolution.question01.DirectAnswer01;
+import com.capgemini.directSolution.question02.DirectAnswer02;
+import com.capgemini.directSolution.question03.DirectAnswer03;
 
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args ){
@@ -32,18 +25,20 @@ public class App
             System.out.println("Finalizar aplicação: 0");
             option = readOption.nextInt();
 
+            //Acesso a solução 01
             if (option == 1) {
                 
                 int stairSize = 10;
-                DirecetAnswer01.showStair(stairSize);                
+                DirectAnswer01.showStair(stairSize);                
                 
 
             }
 
+            // Acesso a solução 02
             if (option == 2) {
                 Scanner readPassword = new Scanner(System.in);
                 
-                List<String> requirements = DirecetAnswer02.showStrongPasswordRequirements();
+                List<String> requirements = DirectAnswer02.showStrongPasswordRequirements();
                 for (String string : requirements) {
                     System.out.println(string);
                 }
@@ -51,17 +46,26 @@ public class App
                 System.out.println("Digite uma senha forte");
                 String password = readPassword.nextLine();                
 
-                System.out.println(DirecetAnswer02.validatePassword(password));
+                System.out.println(DirectAnswer02.validatePassword(password));
                 
                 
             }
 
-            if (option == 3) {
-                Scanner readAnagram = new Scanner(System.in);
+            // Acesso a solução 03
+            if (option == 3) {                
+                Scanner readWord = new Scanner(System.in);
+                String word;
 
-                
+                System.out.println("Digite uma palavra: ");
+                word = readWord.nextLine();
+
+                int countAnagrams = DirectAnswer03.countAnagrams(word);
+
+                System.out.println(countAnagrams);
 
             }
+
+            // Sai do loop e finaliza aplicação
             if (option == 0) {
 
                 endProgram = false;

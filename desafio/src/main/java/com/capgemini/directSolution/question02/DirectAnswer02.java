@@ -3,7 +3,7 @@ package com.capgemini.directSolution.question02;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DirecetAnswer02 {
+public class DirectAnswer02 {
 
     // Bloco de constants que representam as regras
     //TODO INSERIR OS REGEX
