@@ -5,6 +5,10 @@ import java.util.List;
 
 public class DirectAnswer01 {
     
+    /**
+     * Mostra a escada no console
+     * @param stairSize
+     */
     public static void showStair(int stairSize){
 
         String firstStep = makeFirstStep(stairSize);
@@ -15,6 +19,11 @@ public class DirectAnswer01 {
         
     }    
     
+    /**
+     * Constroi o primeiro degrau vazio
+     * @param stairSize
+     * @return
+     */
     private static String makeFirstStep(int stairSize){
         String stepStair = "";
         for (int i = 0; i < stairSize; i++) {
@@ -23,6 +32,11 @@ public class DirectAnswer01 {
         return stepStair;
     }
     
+    /**
+     * Constroi todos os degrais da escada
+     * @param stepStair
+     * @return
+     */
     public static List<String> makeStair(String stepStair){
         
         ArrayList<String> stair = new ArrayList<>();

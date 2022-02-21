@@ -71,16 +71,5 @@ public class ValidatePasswordHelperTest {
         assertEquals(expected, actual);
         
     }
-    
-    @Test
-    public void testValidateSpecialCharTrue() {
-        // CharSequence ONE_SPECIAL_CHAR = {'!','@','#','$','%','^','&','*','(',')','-','+'};
-        CharSequence ONE_SPECIAL_CHAR = "!@#$%^&*()-+";
-        // String ONE_SPECIAL_CHAR = "!@#$%^&*()-+";
-        String password = "a$sdasd";
-        boolean actual = ValidatePasswordHelper.validateSpecialCharacteres(ONE_SPECIAL_CHAR, password);
-        boolean expected = true;
-        assertEquals(expected, actual);
-        
-    }
+
 }

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.capgemini.directSolution.question03.DirectAnswer03Test
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.014 s <<< FAILURE! - in com.capgemini.directSolution.question03.DirectAnswer03Test
+testMountAnagramList(com.capgemini.directSolution.question03.DirectAnswer03Test)  Time elapsed: 0.011 s  <<< ERROR!
+java.lang.StringIndexOutOfBoundsException: String index out of range: 11
+	at com.capgemini.directSolution.question03.DirectAnswer03Test.testMountAnagramList(DirectAnswer03Test.java:39)
+
+testCountAnagrams(com.capgemini.directSolution.question03.DirectAnswer03Test)  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.StringIndexOutOfBoundsException: String index out of range: 11
+	at com.capgemini.directSolution.question03.DirectAnswer03Test.testCountAnagrams(DirectAnswer03Test.java:17)
+

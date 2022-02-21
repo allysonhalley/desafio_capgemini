@@ -6,9 +6,13 @@ import java.util.List;
 public class DirectAnswer02 {
 
     // Bloco de constants que representam as regras
-    //TODO INSERIR OS REGEX
+    //TODO INSERIR OS REGEX, problemas na insersão do regex
     final static int LENGTH = 6;
 
+    /**
+     * Mostra os prerequisitos necessários para uma senha forte
+     * @return
+     */
     public static List<String> showStrongPasswordRequirements(){
         
         List<String> requirements = new ArrayList<String>();
@@ -24,6 +28,11 @@ public class DirectAnswer02 {
 
     }
     
+    /**
+     * Validados de password
+     * @param password
+     * @return
+     */
     public static int validatePassword(String password){
         
         if (ValidatePasswordHelper.validateLength(password)) {

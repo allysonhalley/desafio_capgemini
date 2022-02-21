@@ -30,3 +30,9 @@
 * Executar o MAVEN
 * Executar o projeto
 * Instruções durante execução
+
+### Resumo
+
+* Solução #1 100%
+* Solução #2 Com erros de validação por Regex, verificar Alternative Solution com as tentativas
+* Solução #3 Validação com erro em "index"

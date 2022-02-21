@@ -34,7 +34,7 @@ public class DirectAnswer03Test {
 
         String word = "ifailuhkqq";
         List<String[]> anagrams = new ArrayList<String[]>();
-        int sizeWord = 0;
+        int sizeWord = 1;
 
         anagrams = DirectAnswer03.mountAnagramList(word, anagrams, sizeWord);
 

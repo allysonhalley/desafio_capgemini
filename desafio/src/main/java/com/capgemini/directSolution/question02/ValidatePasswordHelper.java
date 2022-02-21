@@ -5,6 +5,11 @@ import java.util.regex.Pattern;
 
 public class ValidatePasswordHelper {
 
+    /**
+     * Retorna a quantidade de caracteres necessários para chegar nos 6 digitos
+     * @param password
+     * @return
+     */
     public static boolean validateLength(String password ){
         
         if (password.isEmpty()) {
@@ -14,6 +19,12 @@ public class ValidatePasswordHelper {
         }
     }
 
+    /**
+     * Valida de acordo com o regex passado como parâmetro
+     * @param regex
+     * @param password
+     * @return
+     */
     public static boolean validateCharacteres(final String regex, String password ){
         
         boolean contain = true;        
